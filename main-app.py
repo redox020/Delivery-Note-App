@@ -26,11 +26,11 @@ for i in range(num_drivers):
     d_col1, d_col2 = st.columns(2)
     with d_col1:
         # Default first row to something, leave others blank
-        default_driver = "SUKRI BIN NURDIN" if i == 0 else ""
+        default_driver = "ALI BIN ABU" if i == 0 else ""
         d_name = st.text_input(f"Driver Name {i+1}", default_driver, key=f"d_name_{i}")
         drivers.append(d_name)
     with d_col2:
-        default_lorry = "RAM5677" if i == 0 else ""
+        default_lorry = "ABC123" if i == 0 else ""
         l_no = st.text_input(f"Lorry Number {i+1}", default_lorry, key=f"l_no_{i}")
         lorries.append(l_no)
 
